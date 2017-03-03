@@ -20,7 +20,7 @@ body {
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
-	color:#656565;
+	color:#3C3C3C;
 }
 
 a:active {
@@ -33,7 +33,6 @@ a:active {
 
 h1,h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
-	font-weight:700;
 	line-height:1.1em;
 	color:#333;
 	margin-bottom: 20px;
@@ -109,14 +108,13 @@ header .navbar {
 }
 
 .navbar-brand {
-    color: #222;
 	text-transform: uppercase;
     font-size: 24px;
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
-    margin-top: 30px;
-    padding: 0 0 0 15px;
+    margin-top: 19px;
+    padding: 0 0 0 17px;
 }
 
 
@@ -125,8 +123,12 @@ header .navbar-collapse  ul.navbar-nav {
     margin-right: 0;
 }
 
+.navbar-default .navbar-brand {
+	color: #BDB8A5;
+}
+
 header .navbar-default{
-    background-color: #fff;
+    background-color: #252525;
 }
 
 header .nav li a:hover,
@@ -157,12 +159,11 @@ header .navbar-default .navbar-nav > .open > a:focus {
 
 
 header .navbar {
-    min-height: 100px;
 }
 
 header .navbar-nav > li  {
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 7px;
+    padding-top: 7px;
 }
 
 header  .navbar-nav > li > a {
@@ -196,8 +197,8 @@ header .nav .caret {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color:  #fff;
-}	
-	
+}
+
 
 .dropdown-menu  {
     box-shadow: none;
@@ -230,14 +231,14 @@ header ul.nav li {
 	margin:0;
 }
 
-header ul.nav li a {	
+header ul.nav li a {
 	font-size:12px;
 	border:none;
 	font-weight:700;
 	text-transform:uppercase;
 }
 
-header ul.nav li ul li a {	
+header ul.nav li ul li a {
 	font-size:12px;
 	border:none;
 	font-weight:300;
@@ -246,7 +247,7 @@ header ul.nav li ul li a {
 
 
 .navbar .nav > li > a {
-  color: #111;
+  color: #BDBDBD;
   text-shadow: none;
 }
 
@@ -1516,7 +1517,7 @@ ul.time-post li.time{
 ================================ */
 
 footer{
-	padding:50px 0 0 0;
+	padding:20px 0 0 0;
 	color:#f8f8f8;
 }
 
@@ -1548,14 +1549,15 @@ ul.social-network {
 ul.social-network li {
 	display:inline;
 	margin: 0 5px;
+	font-size: 30px;
 }
 
-#sub-footer{
-	text-shadow:none;
-	color:#f5f5f5;
-	padding:0;
-	padding-top:30px;
-	margin:20px 0 0 0;
+#sub-footer {
+	text-shadow: none;
+	color: #f5f5f5;
+	padding: 0;
+	padding-top: 0px;
+	margin: 0;
 }
 
 #sub-footer p{
