@@ -18,7 +18,6 @@
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
-	font-weight:300;
 	line-height:1.6em;
 	color:#3C3C3C;
 }
@@ -45,6 +44,11 @@ h1,h2, h3, h4, h5, h6 {
 .container {
 	padding:0 20px 0 20px;
 	position:relative;
+}
+
+.main-container {
+	max-width:800px;
+	margin: 0 auto;
 }
 
 #wrapper{
