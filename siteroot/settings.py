@@ -194,13 +194,11 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, *MEDIA_URL.strip("/").split("/"))
 # Package/module name to import the root urlpatterns from for the project.
 ROOT_URLCONF = "%s.urls" % PROJECT_APP
 
-templatename = "moderna"
-
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(PROJECT_ROOT, templatename + "/templates"),
+            os.path.join(PROJECT_ROOT, "mytemplates"),
             os.path.join(PROJECT_ROOT, "templates")
         ],
         "APP_DIRS": True,
@@ -233,7 +231,7 @@ if DJANGO_VERSION < (1, 9):
 ################
 
 INSTALLED_APPS = (
-    templatename,
+    "moderna",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -250,7 +248,7 @@ INSTALLED_APPS = (
     "mezzanine.blog",
     "mezzanine.forms",
     "mezzanine.galleries",
-    # "mezzanine.twitter",
+    "mezzanine.twitter",
     # "mezzanine.accounts",
     # "mezzanine.mobile",
 )
@@ -260,6 +258,7 @@ INSTALLED_APPS = (
 # response phase the middleware will be applied in reverse order.
 MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.UpdateCacheMiddleware",
+
     'django.contrib.sessions.middleware.SessionMiddleware',
     # Uncomment if using internationalisation or localisation
     # 'django.middleware.locale.LocaleMiddleware',

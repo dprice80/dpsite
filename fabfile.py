@@ -27,8 +27,7 @@ from fabric.decorators import hosts
 # Config setup #
 ################
 
-if not hasattr(env, "proj_app"):
-    env.proj_app = real_project_name("siteroot")
+env.proj_app = real_project_name("testse")
 
 conf = {}
 if sys.argv[0].split(os.sep)[-1] in ("fab", "fab-script.py"):
@@ -42,7 +41,6 @@ if sys.argv[0].split(os.sep)[-1] in ("fab", "fab-script.py"):
     except (ImportError, AttributeError):
         print("Aborting, no hosts defined.")
         exit()
-
 
 env.db_pass = conf.get("DB_PASS", None)
 env.admin_pass = conf.get("ADMIN_PASS", None)
@@ -70,11 +68,6 @@ env.num_workers = conf.get("NUM_WORKERS",
 
 env.secret_key = conf.get("SECRET_KEY", "")
 env.nevercache_key = conf.get("NEVERCACHE_KEY", "")
-
-if not env.secret_key:
-    print("Aborting, no SECRET_KEY setting defined.")
-    exit()
-
 
 # Remote git repos need to be "bare" and reside separated from the project
 if env.deploy_tool == "git":

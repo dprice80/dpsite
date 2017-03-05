@@ -1,5 +1,5 @@
 """
-WSGI config for siteroot project.
+WSGI config for testse project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -13,6 +13,6 @@ from django.core.wsgi import get_wsgi_application
 from mezzanine.utils.conf import real_project_name
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE",
-                      "%s.settings" % real_project_name("siteroot"))
+                      "%s.settings" % real_project_name("testse"))
 
 application = get_wsgi_application()
