@@ -134,7 +134,7 @@ AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
 # The numeric mode to set newly-uploaded files to. The value should be
 # a mode you'd pass directly to os.chmod.
 FILE_UPLOAD_PERMISSIONS = 0o644
-
+FILEBROWSER_MAX_UPLOAD_SIZE = 40000000
 
 #############
 # DATABASES #
