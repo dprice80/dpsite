@@ -4,7 +4,7 @@ import os
 
 from django import VERSION as DJANGO_VERSION
 from django.utils.translation import ugettext_lazy as _
-
+from django.forms.widgets import TextArea
 
 ######################
 # MEZZANINE SETTINGS #
@@ -85,7 +85,7 @@ from django.utils.translation import ugettext_lazy as _
 # INSTALLED_APPS setting.
 USE_MODELTRANSLATION = False
 
-RICHTEXT_WIDGET_CLASS = "django.forms.widgets.TextArea"
+RICHTEXT_WIDGET_CLASS = 
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
