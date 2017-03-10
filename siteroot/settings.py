@@ -85,7 +85,7 @@ from django.utils.translation import ugettext_lazy as _
 # INSTALLED_APPS setting.
 USE_MODELTRANSLATION = False
 
-
+RICHTEXT_WIDGET_CLASS = "django.forms.widgets.TextArea"
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
