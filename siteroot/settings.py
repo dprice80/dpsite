@@ -85,7 +85,6 @@ from django.forms.widgets import TextArea
 # INSTALLED_APPS setting.
 USE_MODELTRANSLATION = False
 
-RICHTEXT_WIDGET_CLASS = TextArea
 ########################
 # MAIN DJANGO SETTINGS #
 ########################
